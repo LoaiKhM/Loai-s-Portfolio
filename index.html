@@ -2,15 +2,30 @@
 <html lang="en">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#000">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loai's Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <p style="    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Playwrite CU', cursive;
+    color: white;
+    width: min-content;
+    font-size: 24px;
+    z-index: 1000;
+    padding-left: 20px;
+    padding-top: 20px;">LOAI</p>
+
     <div class="welcoming">
         <div class="container1">
             <div class="workin">
@@ -21,26 +36,102 @@
             <div class="photo"><img src="./owner.jpg" alt="Loai Maklad" class="loai"></div>
         </div>
         <div class="socialM">
-            <img src="./insta.svg" class="insta" >
+            <img src="./insta.svg" class="insta">
 
             <img src="./face.svg" class="face">
-            
+
             <img src="./gmail.svg" class="gmail">
         </div>
-        
-    </div>
-    <div class="skills">
-        <p class="title">Skills</p>
-        <div class="cont1">
-            <div class="uncol">
-                <h1 class="typo"><b class="fur">I Am</b> Originally A Full-Stack Developer, But I Also Have Experience In Some Other Areas.</h1>
-                <p class="small" style="margin-top: 10px;">I Am An Expert Programmer, Working In Websites And Android Apps And Windows And Linux Tools. This Tools Can Make Diffrent Actions For Ex : Get Informations, Hack Devices, Edit System Settings, etc... . </p>
-            </div>
-            <div class="statics">
 
+    </div>
+    <div class="cont2">
+        <div class="skills">
+            <p class="title" style="    position: relative;
+        top: 30px;">Skills</p>
+            <div class="cont1">
+                <div class="uncol">
+                    <h1 class="typo" data-class="skills"><b class="fur">I Am</b> Originally A Full-Stack Developer, But
+                        I
+                        Also Have Experience In Some Other Areas.</h1>
+                    <p class="small" data-class="skills" style="margin-top: 10px;">I am an expert programmer
+                        specializing in
+                        websites, Android apps, and tools for both Windows and Linux. My tools can perform a variety of
+                        actions, such as retrieving information, modifying system settings, and more. </p>
+                </div>
+                <div class="statics">
+                    <h1 class="myanal" data-class="skills">My Analystics</h1>
+                    <span class="prog1">
+                        <label for="prog1" data-class="skills">Web Developement</label>
+                        <progress value="9.1" max="10" id="prog1" data-class="skills"></progress>
+                    </span>
+                    <span class="prog2">
+                        <label for="prog2" data-class="skills">Android Developement</label>
+                        <progress value="8.6" max="10" id="prog2" data-class="skills"></progress>
+                    </span>
+
+                    <span class="prog3">
+                        <label for="prog3" data-class="skills">Python</label>
+                        <progress value="8.5" max="10" id="prog3" data-class="skills"></progress>
+                    </span>
+
+                    <span class="prog4">
+                        <label for="prog4" data-class="skills">Tools Developement</label>
+                        <progress value="8.5" max="10" id="prog4" data-class="skills"></progress>
+                    </span>
+
+                    <span class="prog5">
+                        <label for="prog5" data-class="skills">C++</label>
+                        <progress value="8.3" max="10" id="prog5" data-class="skills"></progress>
+                    </span>
+
+
+                </div>
             </div>
         </div>
+        <div class="projects">
+            <p class="title" data-class="projects" style="position: relative;
+        top: -38px;">Top Projects</p>
+            <h1 style="font-family:sans-serif;padding-top: 20px;" data-class="projects"><b class="fur"
+                    style="font-family:sans-serif; padding-left:10px;">00</b> Social Network Application You Can Post
+                And
+                Message And Search.</h1>
+            <span class="des">
+                <p class="desc" data-class="projects">Provide A Lot Of Features Like You Can Search Post Photos And
+                    Videos And Have A Profile Of Every User You Can Edit Its Typo And Photo And See His Posts And More.
+                </p>
+                <a href="" class="link" data-class="projects">Github Link</a>
+            </span>
+            <h1 style="font-family:sans-serif;" data-class="projects"><b class="fur"
+                    style="font-family:sans-serif; padding-left:10px;">01</b>
+                E-Commerce Website You Can Buy And Get Back.</h1>
+            <span class="des">
+                <p class="desc" data-class="projects">Provide A Simple E-Commerce Website.</p>
+                <a href="" class="link" data-class="projects">Github Link</a>
+            </span>
+            <h1 style="font-family:sans-serif;" data-class="projects"><b class="fur"
+                    style="font-family:sans-serif; padding-left:10px;">02</b> An
+                Opreating System Working In The Chrome Of Laptops And PCs.</h1>
+            <span class="des" style="margin-bottom:40px;">
+                <p class="desc" data-class="projects">A Linux Simulator That Provides A Lot Of Applications Like Notepad
+                    And Terminal And It Still Under Developement.</p>
+                <a href="" class="link" data-class="projects" style="padding-bottom:30px;">Github Link</a>
+            </span>
+
+        </div>
     </div>
+    <script>
+        $(document).on('scroll', function () {
+            if (document.body.clientHeight + window.scrollY >= $('.skills').offset().top) {
+                $('[data-class=skills]').css('animation', 'show 1s ease-in-out')
+
+            }
+            if (document.body.clientHeight + window.scrollY + 54 >= $('.projects').offset().top) {
+
+                $('[data-class=projects]').css('animation', 'show 1s ease-in-out')
+
+            }
+        })
+    </script>
 </body>
 
 </html>
