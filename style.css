@@ -127,6 +127,7 @@ label{
     font-family: sans-serif;
     position: relative;
     bottom:40px;
+    left: 108px;
 }
 h1{
     font-weight: lighter;
@@ -184,6 +185,9 @@ h1{
     ::-webkit-progress-bar{
         width:200px;
     }
+    .myanal{
+        left:15px;
+    }
     h1,.typo{
         font-size:24px;
     }
@@ -195,11 +199,15 @@ h1{
     ::-webkit-progress-bar{
         width:150px;
     }
+    .myanal{
+        left:4px;
+    }
     h1,.typo{
         font-size:18px;
     }
     .title{
         font-size: 20px;
+        top: 0px  !important;
     }
     .font-sans-36px{
         font-size: 28px;
@@ -223,6 +231,7 @@ h1{
 
     }
     .myanal{
+        left:0;
         bottom: 8px;
         font-family: sans-serif;
         font-weight: lighter;
