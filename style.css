@@ -246,7 +246,11 @@ h1{
         font-size: 12px;
     }
     
-    
+    .loai{
+        margin-bottom: 10px;
+        height: 250px;
+        width: 188px;
+    }
     .container1{
         flex-direction: column-reverse;
         justify-content: center
@@ -255,7 +259,7 @@ h1{
         align-items: center;
     }
     .font-sans-36px{
-        font-size: 24px;
+        font-size: 18px;
     }
     ::-webkit-progress-bar{
         width:100px;
