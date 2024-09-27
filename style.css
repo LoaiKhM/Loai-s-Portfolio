@@ -4,6 +4,9 @@ body{
     margin:0;
     height:100%;
 }
+body{
+    background: rgba(0,0,14);
+}
 p,h1,h2,h3,h6{
     margin: 0%;
     padding: 0;
@@ -193,6 +196,7 @@ h1{
     }
     .title{
         font-size: 26px;
+        top: -9px!important;
     }
 }
 @media (min-width:660px) and (max-width:777px) {
