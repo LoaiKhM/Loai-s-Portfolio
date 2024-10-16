@@ -126,8 +126,10 @@ background: rgba(0,0,14);
     margin-bottom: 10px;
 }
 label{
-    font-family: sans-serif;
+    font-family: "Kanit", sans-serif;
     font-size: 13px;
+    font-weight: 100;
+    font-style: italic;
 }
 .myanal{
     font-family: "Kanit", sans-serif;
@@ -257,7 +259,7 @@ h1{
         height: 200px;
         width: 200px;
         object-fit:cover;
-        border-radius:50%;
+        border-radius: 50%;
     }
     .container1{
         flex-direction: column-reverse;
