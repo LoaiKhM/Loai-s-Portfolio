@@ -18,6 +18,12 @@
 </head>
 
 <body>
+    <div class="loadingbg" style="position:fixed;width:100%;height:100%;background:rgba(0, 0, 0);display: flex;justify-content: center;flex-direction:column;align-items: center;">
+        <h1 style="font-family: 'Playwrite CU', cursive;
+        color: white;
+        font-size: 60px;margin-bottom: 0;padding-bottom: 0;">Loai</h1>
+        <p style="color: white;font-size:20px;margin-top: 1px;font-family: 'Playwrite CU', cursive;">Loading</p>
+    </div>
     <p style="    position: absolute;
     top: 0;
     left: 0;
@@ -123,6 +129,9 @@
         </div>
     </div>
     <script>
+        $(window).on('load', function() {
+            $('.loadingbg').remove()
+        }
         $('.face').click(()=>{
             window.location.href = 'https://www.fb.com/loaikhalid.maklad'
         })
