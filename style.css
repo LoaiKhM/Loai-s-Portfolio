@@ -67,7 +67,9 @@ p,h1,h2,h3,h6{
 }
 .font-sans-36px{
     animation: show 1s ease-in-out;
-    font-family: sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
     font-size:36px;
     color: white;
     margin: 0;
@@ -252,8 +254,10 @@ h1{
     
     .loai{
         margin-bottom: 10px;
-        height: 250px;
-        width: 188px;
+        height: 200px;
+        width: 200px;
+        object-fit:cover;
+        border-raduis:50%;
     }
     .container1{
         flex-direction: column-reverse;
