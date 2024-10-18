@@ -280,6 +280,7 @@ h1{
     }
     h1,.typo{
         font-size:18px;
+        margin-left: 2px;
     }
     .title{
         font-size: 20px;
