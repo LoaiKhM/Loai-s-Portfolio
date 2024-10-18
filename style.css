@@ -93,7 +93,6 @@ p,h1,h2,h3,h6{
     flex-direction: column;
     width: 50%;
     justify-content: center;
-    height: 100%;
 }
 .small{
     font-family: sans-serif;
@@ -203,7 +202,7 @@ h1{
     }
     .title{
         font-size: 26px;
-        top: -9px!important;
+        top: 0px!important;
     }
 }
 @media (min-width:660px) and (max-width:777px) {
