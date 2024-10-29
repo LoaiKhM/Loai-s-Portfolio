@@ -106,7 +106,7 @@ p,h1,h2,h3,h6{
     justify-content: center;
     align-items: center;
 }
-.skills,.projects{
+.skills,.projects,.projects2{
     
 height: auto;
     
@@ -285,3 +285,4 @@ h1{
         font-size: 20px;
     }
 }
+
