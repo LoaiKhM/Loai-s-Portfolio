@@ -161,7 +161,18 @@ h1{
     color: purple;
     text-decoration: none;
     font-family: sans-serif;
+ 
     font-size: 18px;
+}
+.pgs{
+    display: flex;
+    align-items: center;
+}
+.pgstxt{
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    font-size: 10px;
 }
 @keyframes show {
     from{
@@ -187,11 +198,15 @@ h1{
     height:10px;
     background-color: white;
 }
+
 ::-webkit-scrollbar{
     width:5px;
 }
 @media (max-width:1582px) and (min-width:778px){
     ::-webkit-progress-bar{
+        width:200px;
+    }
+    .pgstxt{
         width:200px;
     }
     .myanal{
@@ -208,6 +223,9 @@ h1{
 @media (min-width:660px) and (max-width:777px) {
     ::-webkit-progress-bar{
         width:150px;
+    }
+    .pgstxt{
+        width: 150px;
     }
     .myanal{
         left:4px;
@@ -273,6 +291,14 @@ h1{
     ::-webkit-progress-bar{
         width:100px;
         left: 56px;
+    }
+    .pgs{
+        justify-content: center;
+    }
+    .pgstxt{
+        width: auto;
+        position: relative;
+        left: -64px;
     }
     .title{
         top: 0px !important;
