@@ -118,9 +118,8 @@ background: rgba(0,0,14);
 }
 
 .prog1 ,.prog2,.prog3 , .prog4 ,.prog5{
-    width: 305px;
+    width: min-content;
     display: flex;
-    justify-content: space-between;
     align-items:center;
     margin-bottom: 10px;
 }
@@ -129,6 +128,7 @@ label{
     font-size: 13px;
     font-weight: 100;
     font-style: italic;
+    width: 126px;
 }
 .myanal{
     font-family: "Kanit", sans-serif;
@@ -136,7 +136,7 @@ label{
     font-style: italic;
     position: relative;
     bottom:40px;
-    left: 108px;
+    left: 10px;
 }
 h1{
     font-weight: lighter;
@@ -165,14 +165,16 @@ h1{
     font-size: 18px;
 }
 .pgs{
+    width: min-content;
     display: flex;
     align-items: center;
 }
 .pgstxt{
-    position: absolute;
+    position: relative;
     text-align: center;
-    width: 400px;
-    font-size: 10px;
+    font-size: 12px;
+    width: 0;
+    left: -50%;
 }
 @keyframes show {
     from{
@@ -184,27 +186,36 @@ h1{
         opacity: 1;
     }
 }
-::-webkit-progress-value{
+.full{
+    height: 100%;
+    
     background-color: purple;
-    border-radius: 2px;
-    height:10px;
-
+    display: flex;
+    flex-grow: 1;
 }
-::-webkit-progress-bar{
-    position: relative;
-    width:400px;
-    top: 4px;
-    border-radius: 2px;
-    height:10px;
+.not{
+    height: 100%;
+    
     background-color: white;
+    display: flex;
+    flex-grow: 1;
+}
+.pdiv{
+    display: flex;
+    align-items: center;
+    width:400px;
+    border-radius: 2px;
+    height: 12px;
+    margin-left: 10px;
 }
 
 ::-webkit-scrollbar{
     width:5px;
 }
 @media (max-width:1582px) and (min-width:778px){
-    ::-webkit-progress-bar{
-        width:200px;
+    .pdiv{
+        width: 248px;
+        margin-left: 10px;
     }
     .pgstxt{
         width:200px;
@@ -221,8 +232,8 @@ h1{
     }
 }
 @media (min-width:660px) and (max-width:777px) {
-    ::-webkit-progress-bar{
-        width:150px;
+    .pdiv{
+        width: 250px;
     }
     .pgstxt{
         width: 150px;
@@ -248,7 +259,7 @@ h1{
 
 
 
-@media screen and (max-width:659px) {
+@media screen and (max-width:782px) {
 
     .cont1{
         flex-direction: column;
@@ -288,18 +299,14 @@ h1{
     .font-sans-36px{
         font-size: 18px;
     }
-    ::-webkit-progress-bar{
-        width:100px;
+    .pdiv{
+        width: 167px;
         left: 56px;
     }
     .pgs{
         justify-content: center;
     }
-    .pgstxt{
-        width: auto;
-        position: relative;
-        left: -64px;
-    }
+
     .title{
         top: 0px !important;
     }
@@ -311,4 +318,3 @@ h1{
         font-size: 20px;
     }
 }
-
