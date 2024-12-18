@@ -54,9 +54,14 @@
 
     </div>
     <div class="cont2">
+        <div class="navigator">
+            <h3 class="section" id="sec1" data-selected="true">Skills</h3>
+            <h3 class="section" id="sec2">Projects</h3>
+            <h3 class="section" id="sec3">Certificates</h3>
+        </div>
         <div class="skills">
-            <p class="title" style="    position: relative;
-        top: 30px;" data-class="skills">Skills</p>
+            <!-- <p class="title" style="    position: relative;
+        top: 30px;" data-class="skills">Skills</p> -->
             <div class="cont1">
                 <div class="uncol">
                     <h1 class="typo" data-class="skills"><b class="fur">I Am</b> Originally A Full-Stack Developer, But
@@ -75,7 +80,7 @@
                             <div class='pdiv' id="prog1" data-class="skills">
                                 <div class="full" style="flex:0 0 91%;"></div>
                                 <div class="not" style="flex:0 0 9%;"></div>
-                                <p class="pgstxt" style="animation: 1s ease-in-out 0s 1 normal none running show;">91%</p>
+                                <p class="pgstxt">91%</p>
                             </div>
                         </div>
                     </span>
@@ -85,7 +90,7 @@
                             <div class='pdiv' id="prog2" data-class="skills">
                                 <div class="full" style="flex:0 0 86%;"></div>
                                 <div class="not" style="flex:0 0 14%;"></div>
-                                <p class="pgstxt" style="animation: 1s ease-in-out 0s 1 normal none running show;">86%</p>
+                                <p class="pgstxt">86%</p>
                             </div>
                         </div>
                     </span>
@@ -96,7 +101,7 @@
                             <div class='pdiv' id="prog3" data-class="skills">
                                 <div class="full" style="flex:0 0 85%;"></div>
                                 <div class="not" style="flex:0 0 15%;"></div>
-                                <p class="pgstxt" style="animation: 1s ease-in-out 0s 1 normal none running show;">85%</p>
+                                <p class="pgstxt">85%</p>
                             </div>
                         </div>
                     </span>
@@ -107,7 +112,7 @@
                             <div class='pdiv' id="prog4" data-class="skills">
                                 <div class="full" style="flex:0 0 85%;"></div>
                                 <div class="not" style="flex:0 0 15%;"></div>
-                                <p class="pgstxt" style="animation: 1s ease-in-out 0s 1 normal none running show;">85%</p>
+                                <p class="pgstxt">85%</p>
                             </div>
                         </div>
                     </span>
@@ -118,7 +123,7 @@
                             <div class='pdiv' id="prog5" data-class="skills">
                                 <div class="full" style="flex:0 0 83%;"></div>
                                 <div class="not" style="flex:0 0 17%;"></div>
-                                <p class="pgstxt" style="animation: 1s ease-in-out 0s 1 normal none running show;">83%</p>
+                                <p class="pgstxt">83%</p>
                             </div>
                         </div>
                     </span>
@@ -128,8 +133,8 @@
             </div>
         </div>
         <div class="projects">
-            <p class="title" data-class="projects" style="position: relative;
-        top: -38px;">Top Projects</p>
+            <!-- <p class="title" data-class="projects" style="position: relative;
+        top: -38px;">Top Projects</p> -->
             <h1 style="font-family:sans-serif;padding-top: 20px;" data-class="projects"><b class="fur"
                     style="font-family:sans-serif; padding-left:10px;">00</b> Social Network Application You Can Post
                 And
@@ -164,8 +169,8 @@
 
         </div>
         <div class="projects2">
-            <p class="title" data-class="projects2" style="position: relative;
-        top: -38px;">Certificates</p>
+            <!-- <p class="title" data-class="projects2" style="position: relative;
+        top: -38px;">Certificates</p> -->
             <h1 style="font-family:sans-serif;padding-top: 20px;" data-class="projects2"><b class="fur"
                     style="font-family:sans-serif; padding-left:10px;">00</b> DECI Level One From Udacity</h1>
             <span class="des">
@@ -185,6 +190,32 @@
         </div>
     </div>
     <script>
+        $(document).on('click','.section',function(){
+            $('.section').attr('data-selected','false')
+            $(this).attr('data-selected','true')
+            if($(this).attr('id') == 'sec1'){
+                $('.skills').css('display','none')
+                $('.projects').css('display','none')
+                $('.projects2').css('display','none')
+
+                $('.skills').css('display','block')
+            }
+            else if($(this).attr('id') == 'sec2'){
+                $('.skills').css('display','none')
+                $('.projects').css('display','none')
+                $('.projects2').css('display','none')
+
+                $('.projects').css('display','block')
+            }
+            else if($(this).attr('id') == 'sec3'){
+                $('.skills').css('display','none')
+                $('.projects').css('display','none')
+                $('.projects2').css('display','none')
+
+                $('.projects2').css('display','block')
+            }
+            
+        })
         $(window).on('load', function(){
             $('.loadingbg').remove()
         })
