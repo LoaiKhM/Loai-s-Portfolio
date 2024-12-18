@@ -153,6 +153,7 @@ label{
     font-weight: 100;
     font-style: italic;
     width: 126px;
+
 }
 .myanal{
     font-family: "Kanit", sans-serif;
@@ -193,11 +194,12 @@ h1{
     align-items: center;
 }
 .pgstxt{
-    position: relative;
     text-align: center;
     font-size: 12px;
-    width: 0;
-    left: -50%;
+    width: min-content;
+    font-style: italic;
+    position: relative;
+    left: 2%;
 }
 @keyframes show {
     from{
@@ -211,17 +213,17 @@ h1{
 }
 .full{
     height: 100%;
-    
     background-color: purple;
     display: flex;
     flex-grow: 1;
+    border-radius: 18px 0px 0px 18px;
 }
 .not{
     height: 100%;
-    
     background-color: white;
     display: flex;
     flex-grow: 1;
+    border-radius: 0px 18px 18px 0px;
 }
 .pdiv{
     display: flex;
@@ -241,7 +243,7 @@ h1{
         margin-left: 10px;
     }
     .pgstxt{
-        width:200px;
+        width: min-content;
     }
     .myanal{
         left:15px;
@@ -257,38 +259,17 @@ h1{
         margin-bottom: 15px;
     }
 }
-@media (min-width:660px) and (max-width:777px) {
-    .pdiv{
-        width: 250px;
+@media (min-width:625px) and (max-width:876px) {
+    label{
+        width: 132px!important;
     }
-    .navigator h3{
-        margin-bottom: 15px;
-    }
-    .pgstxt{
-        width: 150px;
-    }
-    .myanal{
-        left:4px;
-    }
-    h1,.typo{
-        font-size:18px;
-    }
-    .title{
-        font-size: 20px;
-        top: 0px  !important;
-    }
-    .font-sans-36px{
-        font-size: 28px;
-    }
+    
 }
+@media screen and (max-width:876px) {
+    label{
+        width: 95px;
 
-
-
-
-
-
-
-@media screen and (max-width:782px) {
+    }
     .navigator h3{
         font-size: 13px;
         margin-bottom: 15px;
