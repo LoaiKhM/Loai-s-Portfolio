@@ -16,6 +16,30 @@ p,h1,h2,h3,h6{
     background-size: contain;
     opacity: 0.9;
 }
+.navigator{
+    background: rgba(0,0,14);
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 0;
+    
+}
+.navigator h3{
+    font-family: sans-serif;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 23px;
+    cursor: default;
+}
+.navigator h3[data-selected=true]{
+    background: rgba(0,0,40);
+
+    border-bottom: 2px solid purple;
+}
+.navigator h3:hover{
+    background: rgba(0,0,40);
+}
 .typo{
     padding-left: 10px;
     font-size: 32px;
@@ -86,7 +110,6 @@ p,h1,h2,h3,h6{
 .cont1{
     display: flex;
     height: auto;
-    margin-top: 40px;
 }
 .uncol{
     display: flex;
@@ -114,6 +137,9 @@ p,h1,h2,h3,h6{
     padding-right: 4px;
     padding-left: 4px;
 }
+.projects,.projects2{
+    display: none;
+}
 
 .prog1 ,.prog2,.prog3 , .prog4 ,.prog5{
     width: min-content;
@@ -133,7 +159,6 @@ label{
     font-weight: 500;
     font-style: italic;
     position: relative;
-    bottom:40px;
     left: 10px;
 }
 h1{
@@ -228,10 +253,16 @@ h1{
         font-size: 26px;
         top: 0px!important;
     }
+    .navigator h3{
+        margin-bottom: 15px;
+    }
 }
 @media (min-width:660px) and (max-width:777px) {
     .pdiv{
         width: 250px;
+    }
+    .navigator h3{
+        margin-bottom: 15px;
     }
     .pgstxt{
         width: 150px;
@@ -258,7 +289,10 @@ h1{
 
 
 @media screen and (max-width:782px) {
-
+    .navigator h3{
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
     .cont1{
         flex-direction: column;
 
