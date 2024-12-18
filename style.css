@@ -107,14 +107,12 @@ p,h1,h2,h3,h6{
     align-items: center;
 }
 .skills,.projects,.projects2{
-    
-height: auto;
-    
-width:100%;
-    
-color: white;
-    
-background: rgba(0,0,14);
+    height: auto; 
+    width: auto;
+    color: white;
+    background: rgba(0,0,14);
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 .prog1 ,.prog2,.prog3 , .prog4 ,.prog5{
