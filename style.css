@@ -33,12 +33,11 @@ p,h1,h2,h3,h6{
     cursor: default;
 }
 .navigator h3[data-selected=true]{
-    background: rgba(0,0,40);
-
+    background: rgba(0,0,30);
     border-bottom: 2px solid purple;
 }
 .navigator h3:hover{
-    background: rgba(0,0,40);
+    background: rgba(0,0,30);
 }
 .typo{
     padding-left: 10px;
@@ -182,9 +181,10 @@ h1{
 }
 .link{
     padding-left: 40px;
-    color: #c114c1;
+    color: purple;
     text-decoration: none;
     font-family: sans-serif;
+ 
     font-size: 18px;
 }
 .pgs{
