@@ -34,7 +34,7 @@ p,h1,h2,h3,h6{
 }
 .navigator h3[data-selected=true]{
     background: rgba(0,0,30);
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid #d51cd5;
 }
 .navigator h3:hover{
     background: rgba(0,0,30);
@@ -46,7 +46,7 @@ p,h1,h2,h3,h6{
     font-weight: lighter;
 }
 .fur{
-    color:purple;
+    color:#d51cd5;
 }
 .welcoming{
     height: 100%;
@@ -113,8 +113,11 @@ p,h1,h2,h3,h6{
 .uncol{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 75%;
     justify-content: center;
+    margin-right: 22px;
+    margin-bottom: 100px;
+    margin-top: 20px;
 }
 .small{
     font-family: sans-serif;
@@ -125,8 +128,7 @@ p,h1,h2,h3,h6{
     width: 50%;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 50px;
 }
 .skills,.projects,.projects2{
     height: auto; 
@@ -141,9 +143,10 @@ p,h1,h2,h3,h6{
 }
 
 .prog1 ,.prog2,.prog3 , .prog4 ,.prog5{
-    width: min-content;
+    width: 100%;
     display: flex;
     align-items:center;
+    justify-content: space-evenly;
     margin-bottom: 10px;
 }
 label{
@@ -163,6 +166,8 @@ label{
 }
 h1{
     font-weight: lighter;
+    font-family: sans-serif;
+    font-style: italic;
 }
 #prog1 , #prog2 , #prog3, #prog3 , #prog4,#prog5{
     border-radius: 0;
@@ -181,10 +186,9 @@ h1{
 }
 .link{
     padding-left: 40px;
-    color: purple;
+    color: #d51cd5;
     text-decoration: none;
     font-family: sans-serif;
- 
     font-size: 18px;
 }
 .pgs{
@@ -212,7 +216,7 @@ h1{
 }
 .full{
     height: 100%;
-    background-color: purple;
+    background-color: #a40bc7;
     display: flex;
     flex-grow: 1;
     border-radius: 18px 0px 0px 18px;
@@ -232,7 +236,35 @@ h1{
     height: 12px;
     margin-left: 10px;
 }
+.wrkflow{
+    display: flex;
+    justify-content: center;
+}
+.progcont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
 
+.statics {
+    display: flex;
+    flex-direction: column;
+}
+#learned{
+    text-align: center;
+}
+ol li{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+.secparg{
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+}
 ::-webkit-scrollbar{
     width:5px;
 }
@@ -260,14 +292,16 @@ h1{
 }
 @media (min-width:625px) and (max-width:876px) {
     label{
-        width: 132px!important;
+        width: 131px!important;
     }
     
 }
 @media screen and (max-width:876px) {
+    #learned{
+        text-align: left;
+    }
     label{
         width: 95px;
-
     }
     .navigator h3{
         font-size: 13px;
@@ -279,7 +313,7 @@ h1{
     }
     .uncol,.statics{
         width: 100%;
-
+        margin-bottom: 30px;
     }
     .myanal{
         left:0;
