@@ -264,6 +264,7 @@ ol li{
     font-family: sans-serif;
     font-size: 17px;
     font-weight: lighter;
+    padding-left: 6px;
 }
 ::-webkit-scrollbar{
     width:5px;
@@ -299,6 +300,7 @@ ol li{
 @media screen and (max-width:876px) {
     #learned{
         text-align: left;
+        padding-left: 6px!important;!importan;!importa;!import;!impor;!impo;!imp;!im;!i;!;
     }
     label{
         width: 95px;
