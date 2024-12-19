@@ -292,7 +292,7 @@ h1{
     }
     .small, .desc,.link{
         padding-left: 6px;
-        font-size: medium;
+        font-size: small;
         font-weight: lighter;
     }
     
