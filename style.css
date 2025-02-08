@@ -79,9 +79,9 @@ p,h1,h2,h3,h6{
     margin-left: 10px;
 }
 .loai{
-    height: 300x;
-    width: 200px;
-    object-fit: contain;
+    height: 270px;
+    width: 213px;
+    object-fit: cover;
     border-radius: 50px;
 }
 .workin{
