@@ -12,17 +12,18 @@ p,h1,h2,h3,h6{
     padding: 0;
 }
 .cont2{
-    background: rgb(0, 14, 43);
+    background: linear-gradient(352deg, rgba(0, 0, 0, 0.8) 0%, rgba(33, 9, 23, 0.9) 100%);
     background-size: contain;
     opacity: 0.9;
+    );
+    text-shadow: 0px 0px 12px rgba(255, 0, 255, 0.6);
 }
 .navigator{
-    background: rgba(0,0,14);
+    /* background: rgba(0,0,14); */
     display: flex;
     color: white;
     justify-content: center;
     margin: 0;
-    
 }
 .navigator h3{
     font-family: sans-serif;
@@ -33,11 +34,11 @@ p,h1,h2,h3,h6{
     cursor: default;
 }
 .navigator h3[data-selected=true]{
-    background: rgba(0,0,30);
-    border-bottom: 2px solid #d51cd5;
+    /* background: #B2253D; */
+    border-bottom: 2px solid #617893;
 }
 .navigator h3:hover{
-    background: rgba(0,0,30);
+    background: #61789357;
 }
 .typo{
     padding-left: 10px;
@@ -131,10 +132,10 @@ p,h1,h2,h3,h6{
     margin-bottom: 50px;
 }
 .skills,.projects,.projects2{
-    height: auto; 
+    height: auto;
     width: auto;
     color: white;
-    background: rgba(0,0,14);
+    /* background: rgba(0,0,14); */
     padding-right: 4px;
     padding-left: 4px;
 }
