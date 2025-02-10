@@ -15,7 +15,6 @@ p,h1,h2,h3,h6{
     background: linear-gradient(352deg, rgba(0, 0, 0, 0.8) 0%, rgba(33, 9, 23, 0.9) 100%);
     background-size: contain;
     opacity: 0.9;
-    );
     text-shadow: 0px 0px 12px rgba(255, 0, 255, 0.6);
 }
 .navigator{
@@ -122,7 +121,8 @@ p,h1,h2,h3,h6{
 }
 .small{
     font-family: sans-serif;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
 }
 .statics{
     display: flex;
@@ -299,7 +299,7 @@ ol li{
 }
 @media screen and (max-width:876px) {
     #learned{
-        padding-left: 5px !important;!i;!;
+        padding-left: 5px !important;
     }
     .secparg{
         padding-left:5px;
