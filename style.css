@@ -391,3 +391,15 @@ ol li{
         font-size: 20px;
     }
 }
+@media screen and (max-width:450px){
+    .loai{
+        width:200px;
+        height:200px;
+    }
+    .font-sans-36px{
+        font-size:20px !important;
+    }
+    .insta_div,.face_div,.gmail_div{
+        font-size:13px;
+    }
+}
